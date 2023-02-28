@@ -1,0 +1,5 @@
+/home/user/Projects/iVideo/cmake-build-debug/CMakeFiles/iVideo.dir
+/home/user/Projects/iVideo/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/user/Projects/iVideo/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/user/Projects/iVideo/cmake-build-debug/CMakeFiles/iVideo_autogen_timestamp_deps.dir
+/home/user/Projects/iVideo/cmake-build-debug/CMakeFiles/iVideo_autogen.dir

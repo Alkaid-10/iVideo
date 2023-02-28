@@ -1,0 +1,4 @@
+/home/user/Projects/iVideo/build/CMakeFiles/rebuild_cache.dir
+/home/user/Projects/iVideo/build/CMakeFiles/edit_cache.dir
+/home/user/Projects/iVideo/build/CMakeFiles/iVideo.dir
+/home/user/Projects/iVideo/build/CMakeFiles/iVideo_autogen.dir
