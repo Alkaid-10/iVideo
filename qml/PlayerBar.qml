@@ -178,7 +178,6 @@ Rectangle{
             sourcePressed: "qrc:/src/icon/stop_.png"
             source:  sourceReleased
             onClicked:{
-                videoOutput.extractFrame();
                 player.stop();
             }
         }
@@ -194,7 +193,17 @@ Rectangle{
                 player.seek(player.position + 5000);
             }
         }
-
+        VB.MenuButton{
+            name:"screenshot"
+            width: toolBar.height
+            height: toolBar.height
+            sourceReleased: "qrc:/src/icon/screenshot.png"
+            sourcePressed:  "qrc:/src/icon/screenshot_.png"
+            source: sourceReleased
+            onClicked: {
+                videoOutput.extractFrame();
+            }
+        }
         Label {
             // tool time;
             width: toolBar.height*1.2

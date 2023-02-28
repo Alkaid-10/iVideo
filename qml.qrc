@@ -24,5 +24,7 @@
         <file>src/icon/stop_.png</file>
         <file>qml/IVideoPlayer.qml</file>
         <file>qml/LoginPage.qml</file>
+        <file>src/icon/screenshot.png</file>
+        <file>src/icon/screenshot_.png</file>
     </qresource>
 </RCC>

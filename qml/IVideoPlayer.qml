@@ -12,23 +12,18 @@ import QtQuick.Window 2.2
         objectName: "video_source"
         source: player
         anchors.fill: parent
-        fillMode: videoOutput.PreserveAspectCrop
+        fillMode: videoOutput.PreserveAspectFit
         property alias totalTime: player.totalTime;//尝试写到一个类里
 
 
-        function extractFrame(){
+        function extractFrame(){// Try to extract frame from video
             //Create an Image element
-            var image = Qt.createQmlObject('import QtQuick 2.0; Image {}',videoOutput,"image");
-
-            image.width = videoOutput.width;
-            image.height = videoOutput.height;
-
             videoOutput.grabToImage(function(result){
-                image.source = result.url;
-                var savePath = "/home/user/Pictures/img_generated.jpg";
-                image.saveToFile(savePath);
-                image.destory();
+                var savePath = "/home/user/Pictures/pic.png";
+                if(result.saveToFile(savePath)){
+                    //The grab happens asynchronously and the JavaScript function callback is invoked when the grab is completed.
 
+                }
             });
         }
         ErrorDialog{
@@ -99,7 +94,6 @@ import QtQuick.Window 2.2
                 bar.visible = !bar.visible;
             }
         }
-
         }
         //menu 待实现在这里
         MouseClickedMenu{
